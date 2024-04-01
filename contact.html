@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="dupa">
+    <meta name="keywords" content="Kafic">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Contact me</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+        <div class="container">
+                <h1 class="logo"><a href="index.html">Aro's Hobbies</a></h1>
+                <ul>
+                    <li><a  href="index.html">Home</a></li>
+
+                    <li><a href="hobby.html">O mnie</a></li>
+                    <li><a class="current" href="contact.html">Kontakt</a></li>
+
+
+                </ul>
+              </div>
+            </nav>  
+    </header>
+
+     <section id="contact-form" class="py-3">
+         <div class="container">
+            <h1 class="l-heading"><span class="text-primary">Skontaktuj </span> się ze mną</h1>
+            <p>Proszę wypełnić wszystkie pola, aby móc się z nami skontaktować</p>
+            <form action="process.php">
+                <div class="form-group">
+                   <laber for="name">Imię</laber>
+                   <input type="text" name="Name" id="Name">
+                </div>
+                <div class="form-group">
+                   <laber for="email">Email</laber>
+                   <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                   <laber for="message">Wiadomość</laber>
+                   <textarea type="email" name="message" id="message"></textarea>
+                </div>
+                <button type="button" class="btn" onclick="redirectToIndex()">Wyślij</button>
+            </form>
+             <script>
+                 function redirectToIndex() {
+                     window.location.href = "index.html";
+                 }
+             </script>
+         </div>
+     </section>
+     <section id="contact-info" class="bg-dark">
+         <div class="container">
+            <div class="box ">
+
+               <div class="box">
+                <i class="fas fa-phone fa-3x"></i>
+                <h3>Telefon</h3>
+                <p>(+48)-737-450-779</p>
+               </div>
+               <div class="box ">
+                <i class="fas fa-envelope fa-3x"></i>
+                <h3 >Email</h3>
+                   <p ><a style="color: white" href="mailto:adres poczty e-mail" >axxrxxo@gmail.com</a></p>
+               </div>
+         </div>
+
+
+     </section>
+    <footer id="main-footer">
+        &copy; 2024 Artur Mędrala industries - Wszelkie prawa zastrzeżone
+    </footer>
+</body>
+</html>
